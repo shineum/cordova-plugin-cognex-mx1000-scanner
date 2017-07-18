@@ -46,7 +46,7 @@ var errorCallback = function(error) {
 ### 3.Close connection
 
 ```javascript
-// then scanner is off and error callback will be fired with error message of "USER_CANCEL".
+// Close the connection
 cordova.plugins.cognex.mx1000scanner.close(successCallback, errorCallback);
 
 var successCallback = function(result) {
