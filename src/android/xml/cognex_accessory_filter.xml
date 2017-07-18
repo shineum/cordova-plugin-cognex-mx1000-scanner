@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <usb-accessory manufacturer="Cognex" model="MX-1000" version="1.0" />
+    <usb-accessory manufacturer="Cognex" model="DataMan 9050" version="1.0" />
+</resources>
