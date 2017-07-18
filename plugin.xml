@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+           id="cordova-plugin-cognex-mx1000-scanner"
+      version="0.0.1">
+    <name>MX1000 Scanner</name>
+    <description>MX1000 Scanner</description>
+    <license>MIT</license>
+    <keywords>cordova,barcode,qrcode,scanner,laser,cognex,mx1000</keywords>
+    <repo>https://github.com/shineum/cordova-plugin-cognex-mx1000-scanner.git</repo>
+
+    <js-module src="www/mx1000scanner.js" name="MX1000Scanner">
+        <clobbers target="cordova.plugins.cognex.mx1000scanner" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="MX1000Scanner">
+                <param name="android-package" value="com.shineum.cognex.MX1000Scanner"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application/activity[@android:name='MainActivity']">
+              <intent-filter>
+                  <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+              </intent-filter>
+              <meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" android:resource="@xml/cognex_accessory_filter" />
+        </config-file>        
+
+        <source-file src="src/android/datamansdk.jar" target-dir="libs"/>
+        <source-file src="src/android/MX1000Scanner.java" target-dir="src/com/shineum/cognex" />
+        <source-file src="src/android/xml/cognex_accessory_filter.xml" target-dir="res/xml" />
+    </platform>
+</plugin>

@@ -1,0 +1,38 @@
+{
+    "name": "cordova-plugin-cognex-mx1000-scanner",
+    "description": "Laser scanner for MX1000",
+    "version": "0.0.1",
+    "homepage": "https://github.com/shineum/cordova-plugin-cognex-mx1000-scanner#readme",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/shineum/cordova-plugin-cognex-mx1000-scanner.git"
+    },
+    "bugs": {
+        "url": "https://github.com/shineum/cordova-plugin-cognex-mx1000-scanner/issues"
+    },
+    "cordova": {
+        "id": "cordova-plugin-cognex-mx1000-scanner",
+        "platforms": [
+            "android"
+        ]
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova-android",
+        "barcode",
+        "qrcode",
+        "data matrix",
+        "laser",
+        "cognex",
+        "mx1000",
+        "scanner"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=5.0.0"
+        }
+    ],
+    "author": "ShineUm",
+    "license": "MIT"
+}
