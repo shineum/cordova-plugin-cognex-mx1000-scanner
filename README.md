@@ -1,0 +1,1 @@
+# cordova-plugin-cognex-mx1000-scanner
