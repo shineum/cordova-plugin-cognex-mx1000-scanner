@@ -1,7 +1,7 @@
 {
     "name": "cordova-plugin-cognex-mx1000-scanner",
     "description": "Laser scanner for MX1000",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "homepage": "https://github.com/shineum/cordova-plugin-cognex-mx1000-scanner#readme",
     "repository": {
         "type": "git",

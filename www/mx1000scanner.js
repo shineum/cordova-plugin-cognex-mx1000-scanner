@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-cognex-mx1000-scanner.MX1000Scanner", function(require, exports, module) {
     var exec = cordova.require("cordova/exec");
 
     /**
@@ -85,4 +84,3 @@ cordova.define("cordova-plugin-cognex-mx1000-scanner.MX1000Scanner", function(re
     var mx1000Scanner = new Mx1000Scanner();
     module.exports = mx1000Scanner;
 
-});

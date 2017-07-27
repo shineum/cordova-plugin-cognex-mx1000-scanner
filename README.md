@@ -71,6 +71,12 @@ var resultCallback = function(result) {
 
 ```
 
+# History
+0.0.2
+- Update script
+
+0.0.1
+- Release
 
 # License
 
